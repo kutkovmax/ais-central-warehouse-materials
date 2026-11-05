@@ -1,0 +1,628 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1019pt" height="593pt" viewBox="0.00 0.00 1019.00 593.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(10.8 582)">
+<title>warehouse_chen</title>
+<polygon fill="white" stroke="none" points="-10.8,10.8 -10.8,-582 1007.72,-582 1007.72,10.8 -10.8,10.8"/>
+<text xml:space="preserve" text-anchor="middle" x="498.46" y="-551.9" font-family="Arial" font-size="17.00">Концептуальная модель данных АИС «Склад-МехПром»</text>
+<!-- UOM&#45;&#45;SUPPLIER -->
+<!-- UOM&#45;&#45;R_UOM_SKU -->
+<g id="edge1" class="edge">
+<title>UOM--R_UOM_SKU</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M460.55,-506.46C419.67,-490.87 366,-470.4 366,-470.4 366,-470.4 356.12,-465.46 347.01,-460.91"/>
+<text xml:space="preserve" text-anchor="middle" x="425.41" y="-486.5" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- UOM&#45;&#45;A_UOM_CODE -->
+<g id="edge25" class="edge">
+<title>UOM--A_UOM_CODE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M487.07,-506.3C477.96,-497.88 469,-489.6 469,-489.6"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M469,-487.6C469,-487.6 434,-470.4 434,-470.4 434,-470.4 427.95,-467.37 420.95,-463.88"/>
+</g>
+<!-- UOM&#45;&#45;A_UOM_NAME -->
+<g id="edge26" class="edge">
+<title>UOM--A_UOM_NAME</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M469,-487.6C469,-487.6 469,-479.05 469,-470.5"/>
+</g>
+<!-- SKU&#45;&#45;RECEIPT -->
+<!-- SKU&#45;&#45;R_SKU_BATCH -->
+<g id="edge9" class="edge">
+<title>SKU--R_SKU_BATCH</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M402.87,-361.96C375.32,-348.2 337.57,-329.36 315.09,-318.13"/>
+<text xml:space="preserve" text-anchor="middle" x="372.67" y="-341.7" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- SKU&#45;&#45;R_ITEM_SKU -->
+<g id="edge21" class="edge">
+<title>SKU--R_ITEM_SKU</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M442.19,-361.6C445.69,-349.87 450.25,-334.57 453.58,-323.42"/>
+<text xml:space="preserve" text-anchor="middle" x="450.08" y="-341.7" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- SKU&#45;&#45;A_SKU_ARTICLE -->
+<g id="edge27" class="edge">
+<title>SKU--A_SKU_ARTICLE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M423.16,-361.6C413.96,-350.03 401.99,-334.99 393.16,-323.89"/>
+</g>
+<!-- SKU&#45;&#45;A_SKU_NAME -->
+<g id="edge28" class="edge">
+<title>SKU--A_SKU_NAME</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M211,-342.8C211,-342.8 183.71,-329.27 163.45,-319.23"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M403.17,-373.88C340.12,-364.34 211,-344.8 211,-344.8"/>
+</g>
+<!-- SKU&#45;&#45;A_SKU_CATEGORY -->
+<g id="edge29" class="edge">
+<title>SKU--A_SKU_CATEGORY</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M211,-342.8C211,-342.8 211,-334.25 211,-325.7"/>
+</g>
+<!-- ZONE&#45;&#45;BATCH -->
+<!-- ZONE&#45;&#45;R_ZONE_CELL -->
+<g id="edge3" class="edge">
+<title>ZONE--R_ZONE_CELL</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M277.65,-225.4C224.17,-216.23 148.11,-203.2 148.11,-203.2 148.11,-203.2 61,-180.8 61,-180.8 61,-180.8 51.12,-175.86 42.01,-171.31"/>
+<text xml:space="preserve" text-anchor="middle" x="150.05" y="-196.9" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- ZONE&#45;&#45;A_ZONE_CODE -->
+<g id="edge30" class="edge">
+<title>ZONE--A_ZONE_CODE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M277.39,-223.57C228.66,-213.53 163,-200 163,-200"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M163,-198C163,-198 136.1,-184.47 116.14,-174.43"/>
+</g>
+<!-- ZONE&#45;&#45;A_ZONE_TYPE -->
+<g id="edge31" class="edge">
+<title>ZONE--A_ZONE_TYPE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M163,-198C163,-198 163,-189.45 163,-180.9"/>
+</g>
+<!-- CELL&#45;&#45;QC -->
+<!-- CELL&#45;&#45;R_CELL_BALANCE -->
+<g id="edge15" class="edge">
+<title>CELL--R_CELL_BALANCE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M326,-72C326,-61.09 326,-47.08 326,-36.2"/>
+<text xml:space="preserve" text-anchor="middle" x="327.95" y="-52.1" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- CELL&#45;&#45;A_CELL_ADDRESS -->
+<g id="edge32" class="edge">
+<title>CELL--A_CELL_ADDRESS</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M288.64,-71.9C270.68,-63.48 253,-55.2 253,-55.2"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M253,-53.2C253,-53.2 217,-36 217,-36 217,-36 210.95,-32.97 203.95,-29.48"/>
+</g>
+<!-- CELL&#45;&#45;A_CELL_STATUS -->
+<g id="edge33" class="edge">
+<title>CELL--A_CELL_STATUS</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M253,-53.2C253,-53.2 253,-44.65 253,-36.1"/>
+</g>
+<!-- SUPPLIER&#45;&#45;DEPARTMENT -->
+<!-- SUPPLIER&#45;&#45;R_SUPPLIER_RECEIPT -->
+<g id="edge5" class="edge">
+<title>SUPPLIER--R_SUPPLIER_RECEIPT</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M591.18,-506.4C579.48,-493.53 563.87,-476.36 553.63,-465.1"/>
+<text xml:space="preserve" text-anchor="middle" x="578.87" y="-486.5" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- SUPPLIER&#45;&#45;A_SUPPLIER_INN -->
+<g id="edge34" class="edge">
+<title>SUPPLIER--A_SUPPLIER_INN</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M630,-487.6C630,-487.6 626.65,-478.78 623.35,-470.1"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M618.77,-506.3C624.43,-497.88 630,-489.6 630,-489.6"/>
+</g>
+<!-- SUPPLIER&#45;&#45;A_SUPPLIER_NAME -->
+<g id="edge35" class="edge">
+<title>SUPPLIER--A_SUPPLIER_NAME</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M630,-487.6C630,-487.6 650.27,-475.22 666.41,-465.36"/>
+</g>
+<!-- RECEIPT&#45;&#45;REQUEST -->
+<!-- RECEIPT&#45;&#45;R_RECEIPT_BATCH -->
+<g id="edge7" class="edge">
+<title>RECEIPT--R_RECEIPT_BATCH</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M541.02,-361.6C539.75,-350.36 538.1,-335.84 536.85,-324.84"/>
+<text xml:space="preserve" text-anchor="middle" x="541.19" y="-341.7" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- RECEIPT&#45;&#45;A_RECEIPT_NUMBER -->
+<g id="edge36" class="edge">
+<title>RECEIPT--A_RECEIPT_NUMBER</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M641,-342.8C641,-342.8 653.02,-331.98 663.54,-322.51"/>
+</g>
+<!-- RECEIPT&#45;&#45;A_RECEIPT_STATUS -->
+<g id="edge37" class="edge">
+<title>RECEIPT--A_RECEIPT_STATUS</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M588.27,-363.2C613.95,-354.24 641,-344.8 641,-344.8"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M641,-342.8C641,-342.8 631.12,-332.86 622.01,-323.7"/>
+</g>
+<!-- BATCH&#45;&#45;REQUEST_ITEM -->
+<!-- BATCH&#45;&#45;R_BATCH_QC -->
+<g id="edge11" class="edge">
+<title>BATCH--R_BATCH_QC</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M450,-216.8C450,-205.89 450,-191.88 450,-181"/>
+<text xml:space="preserve" text-anchor="middle" x="451.95" y="-196.9" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- BATCH&#45;&#45;R_BATCH_BALANCE -->
+<g id="edge13" class="edge">
+<title>BATCH--R_BATCH_BALANCE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M471.01,-216.8C486.74,-203.77 507.81,-186.32 521.39,-175.07"/>
+<text xml:space="preserve" text-anchor="middle" x="497" y="-196.9" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- BATCH&#45;&#45;A_BATCH_NUMBER -->
+<g id="edge38" class="edge">
+<title>BATCH--A_BATCH_NUMBER</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M299,-198C299,-198 272.1,-184.47 252.14,-174.43"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M407.28,-222.67C396.04,-219.64 387,-217.2 387,-217.2 387,-217.2 299,-200 299,-200"/>
+</g>
+<!-- BATCH&#45;&#45;A_BATCH_QC_STATUS -->
+<g id="edge39" class="edge">
+<title>BATCH--A_BATCH_QC_STATUS</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M299,-198C299,-198 299,-189.45 299,-180.9"/>
+</g>
+<!-- BATCH&#45;&#45;A_BATCH_QUANTITY -->
+<g id="edge40" class="edge">
+<title>BATCH--A_BATCH_QUANTITY</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M299,-198C299,-198 327.19,-184.97 348.77,-175"/>
+</g>
+<!-- QC&#45;&#45;BALANCE -->
+<!-- QC&#45;&#45;A_QC_VERDICT -->
+<g id="edge41" class="edge">
+<title>QC--A_QC_VERDICT</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M444.16,-71.9C447.61,-63.48 451,-55.2 451,-55.2"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M451,-53.2C451,-53.2 432.07,-40.98 416.84,-31.15"/>
+</g>
+<!-- QC&#45;&#45;A_QC_CERTIFICATE -->
+<g id="edge42" class="edge">
+<title>QC--A_QC_CERTIFICATE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M451,-53.2C451,-53.2 454.87,-44.38 458.68,-35.7"/>
+</g>
+<!-- BALANCE&#45;&#45;A_BALANCE_PHYSICAL -->
+<g id="edge43" class="edge">
+<title>BALANCE--A_BALANCE_PHYSICAL</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M583,-53.2C583,-53.2 574.76,-44.11 566.77,-35.3"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M571.28,-71.9C577.19,-63.48 583,-55.2 583,-55.2"/>
+</g>
+<!-- BALANCE&#45;&#45;A_BALANCE_RESERVED -->
+<g id="edge44" class="edge">
+<title>BALANCE--A_BALANCE_RESERVED</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M583,-53.2C583,-53.2 610.72,-42.3 634.86,-32.81"/>
+</g>
+<!-- DEPARTMENT&#45;&#45;R_DEPT_REQUEST -->
+<g id="edge17" class="edge">
+<title>DEPARTMENT--R_DEPT_REQUEST</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M725.64,-506.4C732.59,-493.86 741.8,-477.23 748.04,-465.96"/>
+<text xml:space="preserve" text-anchor="middle" x="738.62" y="-486.5" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- DEPARTMENT&#45;&#45;A_DEPT_CODE -->
+<g id="edge45" class="edge">
+<title>DEPARTMENT--A_DEPT_CODE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M857,-487.6C857,-487.6 846.54,-477.08 837.22,-467.71"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M768.9,-510.97C808.91,-501.26 857,-489.6 857,-489.6"/>
+</g>
+<!-- DEPARTMENT&#45;&#45;A_DEPT_NAME -->
+<g id="edge46" class="edge">
+<title>DEPARTMENT--A_DEPT_NAME</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M857,-487.6C857,-487.6 867.77,-477.08 877.36,-467.71"/>
+</g>
+<!-- REQUEST&#45;&#45;R_REQUEST_ITEM -->
+<g id="edge19" class="edge">
+<title>REQUEST--R_REQUEST_ITEM</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M681.51,-361.6C698.41,-347.92 721.34,-329.37 735.1,-318.23"/>
+<text xml:space="preserve" text-anchor="middle" x="708.06" y="-341.7" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- REQUEST&#45;&#45;A_REQUEST_NUMBER -->
+<g id="edge47" class="edge">
+<title>REQUEST--A_REQUEST_NUMBER</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M854,-342.8C854,-342.8 841.66,-331.98 830.86,-322.51"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M705,-371.07C762.3,-360.96 854,-344.8 854,-344.8"/>
+</g>
+<!-- REQUEST&#45;&#45;A_REQUEST_STATUS -->
+<g id="edge48" class="edge">
+<title>REQUEST--A_REQUEST_STATUS</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M854,-342.8C854,-342.8 865.33,-332.86 875.78,-323.7"/>
+</g>
+<!-- REQUEST_ITEM&#45;&#45;R_ITEM_BALANCE -->
+<g id="edge23" class="edge">
+<title>REQUEST_ITEM--R_ITEM_BALANCE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M579.83,-216.8C590.66,-204.09 605.06,-187.19 614.66,-175.93"/>
+<text xml:space="preserve" text-anchor="middle" x="598.75" y="-196.9" font-family="Arial" font-size="7.00" fill="#334155">1</text>
+</g>
+<!-- REQUEST_ITEM&#45;&#45;A_ITEM_REQUESTED -->
+<g id="edge49" class="edge">
+<title>REQUEST_ITEM--A_ITEM_REQUESTED</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M610.43,-228.59C689.01,-218.89 842,-200 842,-200"/>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M842,-198C842,-198 776,-180.8 776,-180.8 776,-180.8 767.59,-178.15 757.42,-174.95"/>
+</g>
+<!-- REQUEST_ITEM&#45;&#45;A_ITEM_ALLOCATED -->
+<g id="edge50" class="edge">
+<title>REQUEST_ITEM--A_ITEM_ALLOCATED</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M842,-198C842,-198 842,-189.45 842,-180.9"/>
+</g>
+<!-- REQUEST_ITEM&#45;&#45;A_ITEM_ISSUED -->
+<g id="edge51" class="edge">
+<title>REQUEST_ITEM--A_ITEM_ISSUED</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M842,-198C842,-198 908,-180.8 908,-180.8 908,-180.8 915.62,-178.1 924.79,-174.85"/>
+</g>
+<!-- R_UOM_SKU&#45;&#45;SKU -->
+<g id="edge2" class="edge">
+<title>R_UOM_SKU--SKU</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M344.88,-442.77C361.19,-431.83 389.73,-412.7 410.72,-398.62"/>
+<text xml:space="preserve" text-anchor="middle" x="390.18" y="-414.1" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_ZONE_CELL&#45;&#45;CELL -->
+<g id="edge4" class="edge">
+<title>R_ZONE_CELL--CELL</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M42.01,-154.29C51.12,-149.74 61,-144.8 61,-144.8 61,-144.8 208.13,-115.15 283.13,-100.04"/>
+<text xml:space="preserve" text-anchor="middle" x="172.29" y="-124.5" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_SUPPLIER_RECEIPT&#45;&#45;RECEIPT -->
+<g id="edge6" class="edge">
+<title>R_SUPPLIER_RECEIPT--RECEIPT</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M543,-434C543,-423.09 543,-409.08 543,-398.2"/>
+<text xml:space="preserve" text-anchor="middle" x="545.53" y="-414.1" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_RECEIPT_BATCH&#45;&#45;BATCH -->
+<g id="edge8" class="edge">
+<title>R_RECEIPT_BATCH--BATCH</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M523.54,-297.11C510.12,-286 487.64,-267.38 471.06,-253.64"/>
+<text xml:space="preserve" text-anchor="middle" x="497.58" y="-269.3" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_SKU_BATCH&#45;&#45;BATCH -->
+<g id="edge10" class="edge">
+<title>R_SKU_BATCH--BATCH</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M316.13,-297.4C340.27,-286.36 381.24,-267.63 411.51,-253.79"/>
+<text xml:space="preserve" text-anchor="middle" x="380.15" y="-269.3" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_BATCH_QC&#45;&#45;QC -->
+<g id="edge12" class="edge">
+<title>R_BATCH_QC--QC</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M447.11,-146.18C445.08,-135.16 442.35,-120.39 440.24,-108.96"/>
+<text xml:space="preserve" text-anchor="middle" x="449.73" y="-124.5" font-family="Arial" font-size="7.00" fill="#334155">0..1</text>
+</g>
+<!-- R_BATCH_BALANCE&#45;&#45;BALANCE -->
+<g id="edge14" class="edge">
+<title>R_BATCH_BALANCE--BALANCE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M540.09,-146.87C543.86,-135.81 549.01,-120.7 552.98,-109.05"/>
+<text xml:space="preserve" text-anchor="middle" x="550.25" y="-124.5" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_CELL_BALANCE&#45;&#45;BALANCE -->
+<g id="edge16" class="edge">
+<title>R_CELL_BALANCE--BALANCE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M342.78,-26.51C352.96,-31.06 364,-36 364,-36 364,-36 462,-50 462,-50 462,-50 489.78,-61.28 515.61,-71.77"/>
+<text xml:space="preserve" text-anchor="middle" x="483.08" y="-52.1" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_DEPT_REQUEST&#45;&#45;REQUEST -->
+<g id="edge18" class="edge">
+<title>R_DEPT_REQUEST--REQUEST</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M742.58,-442.2C727.69,-431.16 702.42,-412.43 683.74,-398.59"/>
+<text xml:space="preserve" text-anchor="middle" x="712.88" y="-414.1" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_REQUEST_ITEM&#45;&#45;REQUEST_ITEM -->
+<g id="edge20" class="edge">
+<title>R_REQUEST_ITEM--REQUEST_ITEM</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M731.99,-299.09C722.88,-294.54 713,-289.6 713,-289.6 713,-289.6 653.73,-268.22 610.21,-252.51"/>
+<text xml:space="preserve" text-anchor="middle" x="675.84" y="-269.3" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_ITEM_SKU&#45;&#45;REQUEST_ITEM -->
+<g id="edge22" class="edge">
+<title>R_ITEM_SKU--REQUEST_ITEM</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M466.11,-293.26C473.05,-281.83 481.94,-267.2 481.94,-267.2 481.94,-267.2 500.19,-260.39 519.58,-253.15"/>
+<text xml:space="preserve" text-anchor="middle" x="484.47" y="-269.3" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- R_ITEM_BALANCE&#45;&#45;BALANCE -->
+<g id="edge24" class="edge">
+<title>R_ITEM_BALANCE--BALANCE</title>
+<path fill="none" stroke="#64748b" stroke-width="0.8" d="M614.1,-150.17C603.56,-138.93 587.44,-121.74 575.36,-108.85"/>
+<text xml:space="preserve" text-anchor="middle" x="596.51" y="-124.5" font-family="Arial" font-size="7.00" fill="#334155">N</text>
+</g>
+<!-- UOM -->
+<g id="node1" class="node">
+<title>UOM</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M538.86,-542.8C538.86,-542.8 473.14,-542.8 473.14,-542.8 467.14,-542.8 461.14,-536.8 461.14,-530.8 461.14,-530.8 461.14,-518.8 461.14,-518.8 461.14,-512.8 467.14,-506.8 473.14,-506.8 473.14,-506.8 538.86,-506.8 538.86,-506.8 544.86,-506.8 550.86,-512.8 550.86,-518.8 550.86,-518.8 550.86,-530.8 550.86,-530.8 550.86,-536.8 544.86,-542.8 538.86,-542.8"/>
+<text xml:space="preserve" text-anchor="middle" x="506" y="-527.5" font-family="Arial" font-size="9.00">Единица измерения</text>
+<text xml:space="preserve" text-anchor="middle" x="506" y="-516.7" font-family="Arial" font-size="9.00">(UOM)</text>
+</g>
+<!-- SKU -->
+<g id="node2" class="node">
+<title>SKU</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M458.61,-398C458.61,-398 415.39,-398 415.39,-398 409.39,-398 403.39,-392 403.39,-386 403.39,-386 403.39,-374 403.39,-374 403.39,-368 409.39,-362 415.39,-362 415.39,-362 458.61,-362 458.61,-362 464.61,-362 470.61,-368 470.61,-374 470.61,-374 470.61,-386 470.61,-386 470.61,-392 464.61,-398 458.61,-398"/>
+<text xml:space="preserve" text-anchor="middle" x="437" y="-382.7" font-family="Arial" font-size="9.00">Номенклатура</text>
+<text xml:space="preserve" text-anchor="middle" x="437" y="-371.9" font-family="Arial" font-size="9.00">(SKU)</text>
+</g>
+<!-- ZONE -->
+<g id="node3" class="node">
+<title>ZONE</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M368.1,-253.2C368.1,-253.2 289.9,-253.2 289.9,-253.2 283.9,-253.2 277.9,-247.2 277.9,-241.2 277.9,-241.2 277.9,-229.2 277.9,-229.2 277.9,-223.2 283.9,-217.2 289.9,-217.2 289.9,-217.2 368.1,-217.2 368.1,-217.2 374.1,-217.2 380.1,-223.2 380.1,-229.2 380.1,-229.2 380.1,-241.2 380.1,-241.2 380.1,-247.2 374.1,-253.2 368.1,-253.2"/>
+<text xml:space="preserve" text-anchor="middle" x="329" y="-237.9" font-family="Arial" font-size="9.00">Зона склада</text>
+<text xml:space="preserve" text-anchor="middle" x="329" y="-227.1" font-family="Arial" font-size="9.00">(WAREHOUSE_ZONE)</text>
+</g>
+<!-- CELL -->
+<g id="node4" class="node">
+<title>CELL</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M356.36,-108.4C356.36,-108.4 295.64,-108.4 295.64,-108.4 289.64,-108.4 283.64,-102.4 283.64,-96.4 283.64,-96.4 283.64,-84.4 283.64,-84.4 283.64,-78.4 289.64,-72.4 295.64,-72.4 295.64,-72.4 356.36,-72.4 356.36,-72.4 362.36,-72.4 368.36,-78.4 368.36,-84.4 368.36,-84.4 368.36,-96.4 368.36,-96.4 368.36,-102.4 362.36,-108.4 356.36,-108.4"/>
+<text xml:space="preserve" text-anchor="middle" x="326" y="-93.1" font-family="Arial" font-size="9.00">Ячейка хранения</text>
+<text xml:space="preserve" text-anchor="middle" x="326" y="-82.3" font-family="Arial" font-size="9.00">(STORAGE_CELL)</text>
+</g>
+<!-- SUPPLIER -->
+<g id="node5" class="node">
+<title>SUPPLIER</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M623.86,-542.8C623.86,-542.8 590.14,-542.8 590.14,-542.8 584.14,-542.8 578.14,-536.8 578.14,-530.8 578.14,-530.8 578.14,-518.8 578.14,-518.8 578.14,-512.8 584.14,-506.8 590.14,-506.8 590.14,-506.8 623.86,-506.8 623.86,-506.8 629.86,-506.8 635.86,-512.8 635.86,-518.8 635.86,-518.8 635.86,-530.8 635.86,-530.8 635.86,-536.8 629.86,-542.8 623.86,-542.8"/>
+<text xml:space="preserve" text-anchor="middle" x="607" y="-527.5" font-family="Arial" font-size="9.00">Поставщик</text>
+<text xml:space="preserve" text-anchor="middle" x="607" y="-516.7" font-family="Arial" font-size="9.00">(SUPPLIER)</text>
+</g>
+<!-- RECEIPT -->
+<g id="node6" class="node">
+<title>RECEIPT</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M575.85,-398C575.85,-398 510.15,-398 510.15,-398 504.15,-398 498.15,-392 498.15,-386 498.15,-386 498.15,-374 498.15,-374 498.15,-368 504.15,-362 510.15,-362 510.15,-362 575.85,-362 575.85,-362 581.85,-362 587.85,-368 587.85,-374 587.85,-374 587.85,-386 587.85,-386 587.85,-392 581.85,-398 575.85,-398"/>
+<text xml:space="preserve" text-anchor="middle" x="543" y="-382.7" font-family="Arial" font-size="9.00">Приходный ордер</text>
+<text xml:space="preserve" text-anchor="middle" x="543" y="-371.9" font-family="Arial" font-size="9.00">(RECEIPT_ORDER)</text>
+</g>
+<!-- BATCH -->
+<g id="node7" class="node">
+<title>BATCH</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M480.36,-253.2C480.36,-253.2 419.64,-253.2 419.64,-253.2 413.64,-253.2 407.64,-247.2 407.64,-241.2 407.64,-241.2 407.64,-229.2 407.64,-229.2 407.64,-223.2 413.64,-217.2 419.64,-217.2 419.64,-217.2 480.36,-217.2 480.36,-217.2 486.36,-217.2 492.36,-223.2 492.36,-229.2 492.36,-229.2 492.36,-241.2 492.36,-241.2 492.36,-247.2 486.36,-253.2 480.36,-253.2"/>
+<text xml:space="preserve" text-anchor="middle" x="450" y="-237.9" font-family="Arial" font-size="9.00">Партия материала</text>
+<text xml:space="preserve" text-anchor="middle" x="450" y="-227.1" font-family="Arial" font-size="9.00">(BATCH)</text>
+</g>
+<!-- QC -->
+<g id="node8" class="node">
+<title>QC</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M466.1,-108.4C466.1,-108.4 407.9,-108.4 407.9,-108.4 401.9,-108.4 395.9,-102.4 395.9,-96.4 395.9,-96.4 395.9,-84.4 395.9,-84.4 395.9,-78.4 401.9,-72.4 407.9,-72.4 407.9,-72.4 466.1,-72.4 466.1,-72.4 472.1,-72.4 478.1,-78.4 478.1,-84.4 478.1,-84.4 478.1,-96.4 478.1,-96.4 478.1,-102.4 472.1,-108.4 466.1,-108.4"/>
+<text xml:space="preserve" text-anchor="middle" x="437" y="-93.1" font-family="Arial" font-size="9.00">Протокол ОТК</text>
+<text xml:space="preserve" text-anchor="middle" x="437" y="-82.3" font-family="Arial" font-size="9.00">(QC_PROTOCOL)</text>
+</g>
+<!-- BALANCE -->
+<g id="node9" class="node">
+<title>BALANCE</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M600.11,-108.4C600.11,-108.4 517.89,-108.4 517.89,-108.4 511.89,-108.4 505.89,-102.4 505.89,-96.4 505.89,-96.4 505.89,-84.4 505.89,-84.4 505.89,-78.4 511.89,-72.4 517.89,-72.4 517.89,-72.4 600.11,-72.4 600.11,-72.4 606.11,-72.4 612.11,-78.4 612.11,-84.4 612.11,-84.4 612.11,-96.4 612.11,-96.4 612.11,-102.4 606.11,-108.4 600.11,-108.4"/>
+<text xml:space="preserve" text-anchor="middle" x="559" y="-93.1" font-family="Arial" font-size="9.00">Остаток в ячейке</text>
+<text xml:space="preserve" text-anchor="middle" x="559" y="-82.3" font-family="Arial" font-size="9.00">(LOCATION_BALANCE)</text>
+</g>
+<!-- DEPARTMENT -->
+<g id="node10" class="node">
+<title>DEPARTMENT</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M756.36,-542.8C756.36,-542.8 675.64,-542.8 675.64,-542.8 669.64,-542.8 663.64,-536.8 663.64,-530.8 663.64,-530.8 663.64,-518.8 663.64,-518.8 663.64,-512.8 669.64,-506.8 675.64,-506.8 675.64,-506.8 756.36,-506.8 756.36,-506.8 762.36,-506.8 768.36,-512.8 768.36,-518.8 768.36,-518.8 768.36,-530.8 768.36,-530.8 768.36,-536.8 762.36,-542.8 756.36,-542.8"/>
+<text xml:space="preserve" text-anchor="middle" x="716" y="-527.5" font-family="Arial" font-size="9.00">Производственный цех</text>
+<text xml:space="preserve" text-anchor="middle" x="716" y="-516.7" font-family="Arial" font-size="9.00">(DEPARTMENT)</text>
+</g>
+<!-- REQUEST -->
+<g id="node11" class="node">
+<title>REQUEST</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M692.36,-398C692.36,-398 627.64,-398 627.64,-398 621.64,-398 615.64,-392 615.64,-386 615.64,-386 615.64,-374 615.64,-374 615.64,-368 621.64,-362 627.64,-362 627.64,-362 692.36,-362 692.36,-362 698.36,-362 704.36,-368 704.36,-374 704.36,-374 704.36,-386 704.36,-386 704.36,-392 698.36,-398 692.36,-398"/>
+<text xml:space="preserve" text-anchor="middle" x="660" y="-382.7" font-family="Arial" font-size="9.00">Требование М-11</text>
+<text xml:space="preserve" text-anchor="middle" x="660" y="-371.9" font-family="Arial" font-size="9.00">(ISSUE_REQUEST)</text>
+</g>
+<!-- REQUEST_ITEM -->
+<g id="node12" class="node">
+<title>REQUEST_ITEM</title>
+<path fill="#eaf2f8" stroke="#1f4e79" stroke-width="1.3" d="M597.86,-253.2C597.86,-253.2 532.14,-253.2 532.14,-253.2 526.14,-253.2 520.14,-247.2 520.14,-241.2 520.14,-241.2 520.14,-229.2 520.14,-229.2 520.14,-223.2 526.14,-217.2 532.14,-217.2 532.14,-217.2 597.86,-217.2 597.86,-217.2 603.86,-217.2 609.86,-223.2 609.86,-229.2 609.86,-229.2 609.86,-241.2 609.86,-241.2 609.86,-247.2 603.86,-253.2 597.86,-253.2"/>
+<text xml:space="preserve" text-anchor="middle" x="565" y="-237.9" font-family="Arial" font-size="9.00">Строка требования</text>
+<text xml:space="preserve" text-anchor="middle" x="565" y="-227.1" font-family="Arial" font-size="9.00">(REQUEST_ITEM)</text>
+</g>
+<!-- R_UOM_SKU -->
+<g id="node13" class="node">
+<title>R_UOM_SKU</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="332,-470.4 304.75,-452.4 332,-434.4 359.25,-452.4 332,-470.4"/>
+<text xml:space="preserve" text-anchor="middle" x="332" y="-454.5" font-family="Arial" font-size="7.00">имеет</text>
+<text xml:space="preserve" text-anchor="middle" x="332" y="-446.1" font-family="Arial" font-size="7.00">единицу</text>
+</g>
+<!-- R_ZONE_CELL -->
+<g id="node14" class="node">
+<title>R_ZONE_CELL</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="27,-180.8 0,-162.8 27,-144.8 54,-162.8 27,-180.8"/>
+<text xml:space="preserve" text-anchor="middle" x="27" y="-160.7" font-family="Arial" font-size="7.00">содержит</text>
+</g>
+<!-- R_SUPPLIER_RECEIPT -->
+<g id="node15" class="node">
+<title>R_SUPPLIER_RECEIPT</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="543,-470.4 510.28,-452.4 543,-434.4 575.72,-452.4 543,-470.4"/>
+<text xml:space="preserve" text-anchor="middle" x="543" y="-450.3" font-family="Arial" font-size="7.00">поставляет</text>
+</g>
+<!-- R_RECEIPT_BATCH -->
+<g id="node16" class="node">
+<title>R_RECEIPT_BATCH</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="535,-325.6 508,-307.6 535,-289.6 562,-307.6 535,-325.6"/>
+<text xml:space="preserve" text-anchor="middle" x="535" y="-305.5" font-family="Arial" font-size="7.00">включает</text>
+</g>
+<!-- R_SKU_BATCH -->
+<g id="node17" class="node">
+<title>R_SKU_BATCH</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="296,-325.6 251.7,-307.6 296,-289.6 340.3,-307.6 296,-325.6"/>
+<text xml:space="preserve" text-anchor="middle" x="296" y="-305.5" font-family="Arial" font-size="7.00">классифицирует</text>
+</g>
+<!-- R_BATCH_QC -->
+<g id="node18" class="node">
+<title>R_BATCH_QC</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="450,-180.8 419.47,-162.8 450,-144.8 480.53,-162.8 450,-180.8"/>
+<text xml:space="preserve" text-anchor="middle" x="450" y="-164.9" font-family="Arial" font-size="7.00">проходит</text>
+<text xml:space="preserve" text-anchor="middle" x="450" y="-156.5" font-family="Arial" font-size="7.00">контроль</text>
+</g>
+<!-- R_BATCH_BALANCE -->
+<g id="node19" class="node">
+<title>R_BATCH_BALANCE</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="535,-180.8 494.61,-162.8 535,-144.8 575.39,-162.8 535,-180.8"/>
+<text xml:space="preserve" text-anchor="middle" x="535" y="-164.9" font-family="Arial" font-size="7.00">учитывается</text>
+<text xml:space="preserve" text-anchor="middle" x="535" y="-156.5" font-family="Arial" font-size="7.00">в</text>
+</g>
+<!-- R_CELL_BALANCE -->
+<g id="node20" class="node">
+<title>R_CELL_BALANCE</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="326,-36 295.47,-18 326,0 356.53,-18 326,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="326" y="-20.1" font-family="Arial" font-size="7.00">содержит</text>
+<text xml:space="preserve" text-anchor="middle" x="326" y="-11.7" font-family="Arial" font-size="7.00">остаток</text>
+</g>
+<!-- R_DEPT_REQUEST -->
+<g id="node21" class="node">
+<title>R_DEPT_REQUEST</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="755,-470.4 728,-452.4 755,-434.4 782,-452.4 755,-470.4"/>
+<text xml:space="preserve" text-anchor="middle" x="755" y="-450.3" font-family="Arial" font-size="7.00">создаёт</text>
+</g>
+<!-- R_REQUEST_ITEM -->
+<g id="node22" class="node">
+<title>R_REQUEST_ITEM</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="747,-325.6 720,-307.6 747,-289.6 774,-307.6 747,-325.6"/>
+<text xml:space="preserve" text-anchor="middle" x="747" y="-305.5" font-family="Arial" font-size="7.00">содержит</text>
+</g>
+<!-- R_ITEM_SKU -->
+<g id="node23" class="node">
+<title>R_ITEM_SKU</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="458,-325.6 422.39,-307.6 458,-289.6 493.61,-307.6 458,-325.6"/>
+<text xml:space="preserve" text-anchor="middle" x="458" y="-305.5" font-family="Arial" font-size="7.00">запрашивает</text>
+</g>
+<!-- R_ITEM_BALANCE -->
+<g id="node24" class="node">
+<title>R_ITEM_BALANCE</title>
+<polygon fill="#fef3c7" stroke="#b7791f" points="625,-180.8 589.39,-162.8 625,-144.8 660.61,-162.8 625,-180.8"/>
+<text xml:space="preserve" text-anchor="middle" x="625" y="-160.7" font-family="Arial" font-size="7.00">резервирует</text>
+</g>
+<!-- A_UOM_CODE -->
+<g id="node25" class="node">
+<title>A_UOM_CODE</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="400" cy="-452.4" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="400" y="-450.3" font-family="Arial" font-size="7.00">код ОКЕИ</text>
+</g>
+<!-- A_UOM_NAME -->
+<g id="node26" class="node">
+<title>A_UOM_NAME</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="469" cy="-452.4" rx="27.61" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="469" y="-450.3" font-family="Arial" font-size="7.00">наименование</text>
+</g>
+<!-- A_SKU_ARTICLE -->
+<g id="node27" class="node">
+<title>A_SKU_ARTICLE</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="381" cy="-307.6" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="381" y="-305.5" font-family="Arial" font-size="7.00">артикул</text>
+</g>
+<!-- A_SKU_NAME -->
+<g id="node28" class="node">
+<title>A_SKU_NAME</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="142" cy="-307.6" rx="27.61" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="142" y="-305.5" font-family="Arial" font-size="7.00">наименование</text>
+</g>
+<!-- A_SKU_CATEGORY -->
+<g id="node29" class="node">
+<title>A_SKU_CATEGORY</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="211" cy="-307.6" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="211" y="-305.5" font-family="Arial" font-size="7.00">категория</text>
+</g>
+<!-- A_ZONE_CODE -->
+<g id="node30" class="node">
+<title>A_ZONE_CODE</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="95" cy="-162.8" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="95" y="-160.7" font-family="Arial" font-size="7.00">код зоны</text>
+</g>
+<!-- A_ZONE_TYPE -->
+<g id="node31" class="node">
+<title>A_ZONE_TYPE</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="163" cy="-162.8" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="163" y="-160.7" font-family="Arial" font-size="7.00">тип зоны</text>
+</g>
+<!-- A_CELL_ADDRESS -->
+<g id="node32" class="node">
+<title>A_CELL_ADDRESS</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="183" cy="-18" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="183" y="-15.9" font-family="Arial" font-size="7.00">адрес ячейки</text>
+</g>
+<!-- A_CELL_STATUS -->
+<g id="node33" class="node">
+<title>A_CELL_STATUS</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="253" cy="-18" rx="28.63" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="253" y="-15.9" font-family="Arial" font-size="7.00">статус ячейки</text>
+</g>
+<!-- A_SUPPLIER_INN -->
+<g id="node34" class="node">
+<title>A_SUPPLIER_INN</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="617" cy="-452.4" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="617" y="-450.3" font-family="Arial" font-size="7.00">ИНН</text>
+</g>
+<!-- A_SUPPLIER_NAME -->
+<g id="node35" class="node">
+<title>A_SUPPLIER_NAME</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="686" cy="-452.4" rx="27.61" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="686" y="-450.3" font-family="Arial" font-size="7.00">наименование</text>
+</g>
+<!-- A_RECEIPT_NUMBER -->
+<g id="node36" class="node">
+<title>A_RECEIPT_NUMBER</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="679" cy="-307.6" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="679" y="-305.5" font-family="Arial" font-size="7.00">номер М-4</text>
+</g>
+<!-- A_RECEIPT_STATUS -->
+<g id="node37" class="node">
+<title>A_RECEIPT_STATUS</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="607" cy="-307.6" rx="30.68" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="607" y="-305.5" font-family="Arial" font-size="7.00">статус прихода</text>
+</g>
+<!-- A_BATCH_NUMBER -->
+<g id="node38" class="node">
+<title>A_BATCH_NUMBER</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="231" cy="-162.8" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="231" y="-160.7" font-family="Arial" font-size="7.00">номер партии</text>
+</g>
+<!-- A_BATCH_QC_STATUS -->
+<g id="node39" class="node">
+<title>A_BATCH_QC_STATUS</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="299" cy="-162.8" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="299" y="-160.7" font-family="Arial" font-size="7.00">статус ОТК</text>
+</g>
+<!-- A_BATCH_QUANTITY -->
+<g id="node40" class="node">
+<title>A_BATCH_QUANTITY</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="373" cy="-162.8" rx="32.73" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="373" y="-160.7" font-family="Arial" font-size="7.00">текущий остаток</text>
+</g>
+<!-- A_QC_VERDICT -->
+<g id="node41" class="node">
+<title>A_QC_VERDICT</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="398" cy="-18" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="398" y="-15.9" font-family="Arial" font-size="7.00">вердикт</text>
+</g>
+<!-- A_QC_CERTIFICATE -->
+<g id="node42" class="node">
+<title>A_QC_CERTIFICATE</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="466" cy="-18" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="466" y="-15.9" font-family="Arial" font-size="7.00">сертификат</text>
+</g>
+<!-- A_BALANCE_PHYSICAL -->
+<g id="node43" class="node">
+<title>A_BALANCE_PHYSICAL</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="552" cy="-18" rx="45.02" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="552" y="-15.9" font-family="Arial" font-size="7.00">физическое количество</text>
+</g>
+<!-- A_BALANCE_RESERVED -->
+<g id="node44" class="node">
+<title>A_BALANCE_RESERVED</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="670" cy="-18" rx="59.35" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="670" y="-15.9" font-family="Arial" font-size="7.00">зарезервированное количество</text>
+</g>
+<!-- A_DEPT_CODE -->
+<g id="node45" class="node">
+<title>A_DEPT_CODE</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="823" cy="-452.4" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="823" y="-450.3" font-family="Arial" font-size="7.00">код цеха</text>
+</g>
+<!-- A_DEPT_NAME -->
+<g id="node46" class="node">
+<title>A_DEPT_NAME</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="892" cy="-452.4" rx="27.61" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="892" y="-450.3" font-family="Arial" font-size="7.00">наименование</text>
+</g>
+<!-- A_REQUEST_NUMBER -->
+<g id="node47" class="node">
+<title>A_REQUEST_NUMBER</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="815" cy="-307.6" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="815" y="-305.5" font-family="Arial" font-size="7.00">номер М-11</text>
+</g>
+<!-- A_REQUEST_STATUS -->
+<g id="node48" class="node">
+<title>A_REQUEST_STATUS</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="893" cy="-307.6" rx="36.82" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="893" y="-305.5" font-family="Arial" font-size="7.00">статус требования</text>
+</g>
+<!-- A_ITEM_REQUESTED -->
+<g id="node49" class="node">
+<title>A_ITEM_REQUESTED</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="722" cy="-162.8" rx="47.06" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="722" y="-160.7" font-family="Arial" font-size="7.00">запрошенное количество</text>
+</g>
+<!-- A_ITEM_ALLOCATED -->
+<g id="node50" class="node">
+<title>A_ITEM_ALLOCATED</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="842" cy="-162.8" rx="59.35" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="842" y="-160.7" font-family="Arial" font-size="7.00">зарезервированное количество</text>
+</g>
+<!-- A_ITEM_ISSUED -->
+<g id="node51" class="node">
+<title>A_ITEM_ISSUED</title>
+<ellipse fill="#f8fafc" stroke="#94a3b8" stroke-width="0.8" cx="956" cy="-162.8" rx="40.92" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="956" y="-160.7" font-family="Arial" font-size="7.00">выданное количество</text>
+</g>
+</g>
+</svg>

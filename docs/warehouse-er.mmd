@@ -1,0 +1,173 @@
+erDiagram
+    UOM {
+        int id PK
+        string code UK
+        string name
+    }
+
+    SKU {
+        bigint id PK
+        string article UK
+        string name
+        string category
+        string material_grade
+        int uom_id FK
+    }
+
+    WAREHOUSE_ZONE {
+        int id PK
+        string code UK
+        string name
+        string zone_type
+    }
+
+    STORAGE_CELL {
+        bigint id PK
+        string address_code UK
+        int zone_id FK
+        int rack_number
+        int section_number
+        int tier_number
+        int position_number
+        string cell_status
+    }
+
+    SUPPLIER {
+        bigint id PK
+        string inn UK
+        string name
+    }
+
+    APP_USER {
+        bigint id PK
+        string username UK
+        string full_name
+        int department_id FK
+        boolean is_active
+    }
+
+    USER_ROLE {
+        bigint user_id PK
+        string role_name PK
+    }
+
+    RECEIPT_ORDER {
+        bigint id PK
+        string doc_number UK
+        bigint supplier_id FK
+        bigint created_by_user_id FK
+        string status
+    }
+
+    BATCH {
+        bigint id PK
+        bigint receipt_order_id FK
+        bigint sku_id FK
+        string batch_number
+        decimal initial_quantity
+        decimal current_quantity
+        string qc_status
+        string barcode UK
+    }
+
+    QC_PROTOCOL {
+        bigint id PK
+        bigint batch_id FK
+        bigint inspector_user_id FK
+        string protocol_number UK
+        string verdict
+        datetime inspection_date
+    }
+
+    LOCATION_BALANCE {
+        bigint id PK
+        bigint cell_id FK
+        bigint batch_id FK
+        decimal physical_quantity
+        decimal reserved_quantity
+    }
+
+    DEPARTMENT {
+        int id PK
+        string code UK
+        string name
+    }
+
+    ISSUE_REQUEST {
+        bigint id PK
+        string request_number UK
+        int department_id FK
+        bigint created_by_user_id FK
+        string production_order
+        string status
+    }
+
+    REQUEST_ITEM {
+        bigint id PK
+        bigint request_id FK
+        bigint sku_id FK
+        decimal requested_quantity
+        decimal allocated_quantity
+        decimal issued_quantity
+    }
+
+    REQUEST_ALLOCATION {
+        bigint id PK
+        bigint request_item_id FK
+        bigint location_balance_id FK
+        decimal quantity
+    }
+
+    STOCK_MOVEMENT_LOG {
+        bigint id PK
+        bigint batch_id FK
+        bigint source_cell_id FK
+        bigint target_cell_id FK
+        bigint performed_by_user_id FK
+        decimal quantity
+        string movement_type
+    }
+
+    INVENTORY_SHEET {
+        bigint id PK
+        string sheet_number UK
+        int zone_id FK
+        string status
+    }
+
+    INVENTORY_ITEM {
+        bigint id PK
+        bigint sheet_id FK
+        bigint cell_id FK
+        bigint batch_id FK
+        decimal expected_quantity
+        decimal counted_quantity
+        decimal discrepancy
+    }
+
+    UOM ||--o{ SKU : "defines unit"
+    WAREHOUSE_ZONE ||--o{ STORAGE_CELL : "contains"
+    SUPPLIER ||--o{ RECEIPT_ORDER : "supplies"
+    DEPARTMENT o|--o{ APP_USER : "includes"
+    APP_USER ||--o{ USER_ROLE : "has"
+    APP_USER ||--o{ RECEIPT_ORDER : "creates"
+    RECEIPT_ORDER ||--o{ BATCH : "contains"
+    SKU ||--o{ BATCH : "classifies"
+    BATCH ||--o| QC_PROTOCOL : "is inspected by"
+    APP_USER ||--o{ QC_PROTOCOL : "performs"
+    STORAGE_CELL ||--o{ LOCATION_BALANCE : "stores"
+    BATCH ||--o{ LOCATION_BALANCE : "has balance"
+    DEPARTMENT ||--o{ ISSUE_REQUEST : "submits"
+    APP_USER ||--o{ ISSUE_REQUEST : "creates"
+    ISSUE_REQUEST ||--o{ REQUEST_ITEM : "contains"
+    SKU ||--o{ REQUEST_ITEM : "is requested"
+    REQUEST_ITEM ||--o{ REQUEST_ALLOCATION : "is allocated"
+    LOCATION_BALANCE ||--o{ REQUEST_ALLOCATION : "is reserved"
+    BATCH ||--o{ STOCK_MOVEMENT_LOG : "moves"
+    STORAGE_CELL o|--o{ STOCK_MOVEMENT_LOG : "source cell"
+    STORAGE_CELL o|--o{ STOCK_MOVEMENT_LOG : "target cell"
+    APP_USER ||--o{ STOCK_MOVEMENT_LOG : "performs"
+    WAREHOUSE_ZONE ||--o{ INVENTORY_SHEET : "is counted"
+    INVENTORY_SHEET ||--o{ INVENTORY_ITEM : "contains"
+    STORAGE_CELL ||--o{ INVENTORY_ITEM : "is checked"
+    BATCH ||--o{ INVENTORY_ITEM : "is counted"
